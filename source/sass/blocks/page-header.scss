@@ -1,14 +1,35 @@
 .page-header {
   background-image: url("../../img/header_bike_desktop.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+
+  @media (max-width: 1023px) {
+    background-image: url("../../img/header_bike_tablet.jpg");
+  }
+
+  @media (max-width: 767px) {
+    background-image: url("../../img/header_bike_mobile.jpg");
+  }
 }
 
 .page-header__wrapper {
   max-width: 880px;
+  height: 825px;
   margin: 0 auto;
+
+  @media (max-width: 1023px) {
+    height: min-content;
+  }
 }
 
 .page-header__logo {
   position: absolute;
   top: 318px;
+
+  @media (max-width: 1023px) {
+    position: relative;
+    top: 25px;
+    padding-left: 21px;
+  }
 }
