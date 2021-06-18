@@ -1,0 +1,31 @@
+.promo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 240px;
+  color: $white;
+}
+
+.promo__text {
+  max-width: 400px;
+  padding-top: 56px;
+}
+
+.promo__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 64px;
+}
+
+.promo__description {
+  margin: 0;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  opacity: 0.8;
+}
+
+.promo__form {
+  width: 327px;
+}
