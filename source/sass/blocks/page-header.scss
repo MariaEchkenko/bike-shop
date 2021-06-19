@@ -11,6 +11,16 @@
   @media (max-width: 767px) {
     background-image: url("../../img/header_bike_mobile.jpg");
   }
+
+  margin-bottom: 2495px;
+
+  @media (max-width: 1023px){
+    margin-bottom: 2352px;
+  }
+
+  @media (max-width: 767px){
+    margin-bottom: 3000px;
+  }
 }
 
 .page-header__wrapper {
