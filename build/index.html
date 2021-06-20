@@ -22,16 +22,16 @@
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">О нас</a>
+            <a class="main-nav__link" href="#about">О нас</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Виды велосипедов</a>
+            <a class="main-nav__link" href="#types">Виды велосипедов</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Видео про велосипеды</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Контакты</a>
+            <a class="main-nav__link" href="#contacts">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -55,7 +55,7 @@
   </header>
 
   <main class="page-main">
-    <section class="about-us">
+    <section class="about-us" id="about">
       <h2>Несколько фактов о нас</h2>
       <ul class="about-us__list">
         <li class="about-us__item">Самый широкий выбор велосипедов!</li>
@@ -64,10 +64,29 @@
         <li class="about-us__item">Профессиональные консультации!</li>
       </ul>
     </section>
+    <section class="types" id="types">
+      <div class="types__wrapper">
+        <h2>Виды велосипедов</h2>
+        <ul class="types__list">
+          <li class="types__item types__item--road">
+            <img src="img/road_bike_desktop.jpg" width="342" height="503" alt="Изображение дорожного велосипеда">
+            <p>Дорожный велосипед</p>
+          </li>
+          <li class="types__item types__item--mountain">
+            <img src="img/mountain_bike_desktop.jpg" width="342" height="566" alt="Изображение горного велосипеда">
+            <p>Горный велосипед</p>
+          </li>
+          <li class="types__item types__item--child">
+            <img src="img/child_bike_desktop.jpg" width="342" height="512" alt="Изображение детского велосипеда">
+            <p>Детский велосипед</p>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper" id="contacts">
       <h2>Как нас найти?</h2>
       <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
       <div class="page-footer__map">
