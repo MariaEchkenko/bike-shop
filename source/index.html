@@ -17,38 +17,40 @@
     <div class="page-header__wrapper">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <a class="page-header__logo">
-          <img class="page-header__image" src="img/logo.svg" width="68" height="20" alt="Moon. Логотип сайта велосипедов">
+          <img src="img/logo.svg" width="68" height="20" alt="Moon. Логотип сайта велосипедов">
         </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#about">О нас</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#types">Виды велосипедов</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#video">Видео про велосипеды</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#contacts">Контакты</a>
-          </li>
-        </ul>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#about">О нас</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#types">Виды велосипедов</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#video">Видео про велосипеды</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <div class="page-header__promo promo">
         <div class="promo__text">
-          <p class="promo__title">Мы продаем велосипеды</p>
-          <p class="promo__description">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+          <h2>Мы продаем велосипеды</h2>
+          <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
         </div>
-        <form class="promo__form user-form">
+        <form class="promo__form user-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="user-form__title">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
           <div class="user-form__wrapper">
-            <label class="user-form__label" for="user-name" aria-label="Вашу имя"></label>
-            <input class="user-form__input" type="text" name="user-name" id="user-name" placeholder="Введите Ваше Имя" required>
-            <label class="user-form__label" for="user-tel" aria-label="Ваш номер телефона"></label>
-            <input class="user-form__input" type="tel" name="user-tel" id="user-tel" placeholder="Введите Ваш номер телефона" required>
+            <label for="user-name" aria-label="Вашу имя"></label>
+            <input class="user-form__input-name" type="text" name="user-name" id="user-name" placeholder="Введите Ваше Имя" required>
+            <label for="user-tel" aria-label="Ваш номер телефона"></label>
+            <input class="user-form__input-tel" type="tel" name="user-tel" id="user-tel" placeholder="Введите Ваш номер телефона" required>
           </div>
-          <button class="user-form__button button" type="submit">Подобрать велосипед мечты</button>
+          <button class="user-form__button" type="submit">Подобрать велосипед мечты</button>
         </form>
       </div>
     </div>
@@ -69,15 +71,27 @@
         <h2>Виды велосипедов</h2>
         <ul class="types__list">
           <li class="types__item types__item--road">
-            <img src="img/road_bike_desktop.jpg" width="342" height="503" alt="Изображение дорожного велосипеда">
+            <picture>
+              <source type="image/webp" srcset="img/road_bike_desktop.webp, img/road_bike_desktop@2x.webp 2x">
+              <!-- 1х: 342px/503px; 2x: 684px/1006px -->
+              <img src="img/road_bike_desktop.jpg" srcset="img/road_bike_desktop@2x.jpg 2x" width="342" height="503" alt="Изображение дорожного велосипеда">
+            </picture>
             <p>Дорожный велосипед</p>
           </li>
           <li class="types__item types__item--mountain">
-            <img src="img/mountain_bike_desktop.jpg" width="342" height="566" alt="Изображение горного велосипеда">
+            <picture>
+              <source type="image/webp" srcset="img/mountain_bike_desktop.webp, img/mountain_bike_desktop@2x.webp 2x">
+              <!-- 1х: 342px/566px; 2x: 684px/1132px -->
+              <img src="img/mountain_bike_desktop.jpg" srcset="img/mountain_bike_desktop@2x.jpg 2x" width="342" height="566" alt="Изображение горного велосипеда">
+            </picture>
             <p>Горный велосипед</p>
           </li>
           <li class="types__item types__item--child">
-            <img src="img/child_bike_desktop.jpg" width="342" height="512" alt="Изображение детского велосипеда">
+            <picture>
+              <source type="image/webp" srcset="img/child_bike_desktop.webp, img/child_bike_desktop@2x.webp 2x">
+              <!-- 1х: 342px/503px; 2x: 684px/1024px -->
+              <img src="img/child_bike_desktop.jpg" srcset="img/child_bike_desktop@2x.jpg 2x" width="342" height="512" alt="Изображение детского велосипеда">
+            </picture>
             <p>Детский велосипед</p>
           </li>
         </ul>
@@ -87,8 +101,12 @@
       <div class="video__wrapper">
         <h2>Видео про велосипеды</h2>
         <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
-        <div class="video_player">
-          <img src="img/video_perview_desktop.jpg" width="929" height="522" alt="Изображение велосипеда">
+        <div class="video__player">
+          <picture>
+            <source type="image/webp" srcset="img/video_perview_desktop.webp, img/video_perview_desktop@2x.webp 2x">
+            <!-- 1х: 929px/522px; 2x: 1858px/1044px -->
+            <img src="img/video_perview_desktop.jpg" srcset="img/video_perview_desktop@2x.jpg 2x" width="929" height="522" alt="Изображение велосипеда">
+          </picture>
           <button class="video__button" type="button"><span class="visually-hidden">Начать воспроизведение видео</span></button>
         </div>
       </div>
@@ -119,6 +137,7 @@
     </div>
   </footer>
 
+  <script src="js/inputmask.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

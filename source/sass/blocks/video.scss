@@ -58,11 +58,11 @@
   }
 }
 
-.video_player {
+.video__player {
   position: relative;
 }
 
-.video_player img {
+.video__player img {
   @media (max-width: 1023px) {
     width: 503px;
     height: 282px;

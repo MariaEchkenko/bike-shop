@@ -16,3 +16,31 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+// Validation form
+
+var userPhone = document.querySelector('#user-tel');
+var userName = document.querySelector('#user-name');
+var buttonForm = document.querySelector('.user-form__button');
+
+var im = new Inputmask('+7 (999) 999-99-99');
+im.mask(userPhone);
+
+buttonForm.addEventListener('click', function (evt) {
+  if (userName.value.length === 0) {
+    evt.preventDefault();
+    userName.setCustomValidity('Введите ваше имя');
+  } else {
+    userName.setCustomValidity('');
+  }
+
+  if (userPhone.value.length === 0) {
+    evt.preventDefault();
+    userPhone.setCustomValidity('Введите номер телефона');
+  } else {
+    userPhone.setCustomValidity('');
+  }
+
+  userName.reportValidity();
+  userPhone.reportValidity();
+});
