@@ -2,7 +2,7 @@
   margin-top: 150px;
 
   @media (max-width: 1023px) {
-    margin-top: 71px;
+    margin-top: 74px;
   }
 }
 
@@ -54,12 +54,12 @@
   letter-spacing: -0.5px;
 
   @media (max-width: 1023px) {
-    padding: 54px 15px 40px;
+    padding: 54px 15px 42px;
   }
 
   @media (max-width: 767px) {
     font-size: 18px;
-    padding-bottom: 35px;
+    padding-bottom: 36px;
   }
 
   &::before {
@@ -77,5 +77,9 @@
   line-height: 38px;
   text-align: center;
   color: $turquoise;
+
+    @media (max-width: 767px) {
+      top: 4px;
+    }
   }
 }
