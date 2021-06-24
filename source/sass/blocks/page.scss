@@ -1,9 +1,4 @@
 .page {
-  height: 100%;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 32px;
-  color: $black;
   scroll-behavior: smooth;
 }
 
@@ -13,4 +8,8 @@
   grid-template-rows: min-content 1fr min-content;
   max-width: 1440px;
   margin: 0 auto;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  color: $black;
 }

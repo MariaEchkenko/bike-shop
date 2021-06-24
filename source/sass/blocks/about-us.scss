@@ -1,14 +1,7 @@
-.about-us {
-  margin-top: 150px;
-
-  @media (max-width: 1023px) {
-    margin-top: 74px;
-  }
-}
-
 .about-us h2 {
   margin: 0;
   margin-bottom: 50px;
+  padding-top: 150px;
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
@@ -17,6 +10,7 @@
 
   @media (max-width: 1023px) {
     margin-bottom: 30px;
+    padding-top: 70px;
     font-size: 24px;
     line-height: 41px;
   }
@@ -28,18 +22,18 @@
   justify-content: center;
   max-width: 1205px;
   margin: 0 auto;
-  margin-bottom: 98px;
   padding: 0;
+  padding-bottom: 98px;
   counter-reset: list-counter;
   list-style: none;
 
   @media (max-width: 1023px) {
     max-width: 590px;
-    margin-bottom: 31px;
+    padding-bottom: 32px;
   }
 
   @media (max-width: 767px) {
-    margin-bottom: 47px;
+    padding-bottom: 50px;
   }
 }
 
@@ -63,20 +57,20 @@
   }
 
   &::before {
-  position: absolute;
-  width: 263px;
-  height: 60px;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 0;
+    position: absolute;
+    width: 263px;
+    height: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
 
-  content: "0" counter(list-counter);
+    content: "0" counter(list-counter);
 
-  font-weight: bold;
-  font-size: 28px;
-  line-height: 38px;
-  text-align: center;
-  color: $turquoise;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    color: $turquoise;
 
     @media (max-width: 767px) {
       top: 4px;

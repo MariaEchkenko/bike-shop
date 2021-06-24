@@ -1,40 +1,25 @@
 .page-header {
   background-color: #1e1e1e;
-  background-image: url("../../img/header_bike_desktop.jpg");
+  background-image: url("../img/header_bike_desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/header_bike_desktop@2x.jpg");
+    background-image: url("../img/header_bike_desktop@2x.jpg");
   }
 
   @media (max-width: 1023px) {
-    margin-bottom: 340px;
-    background-image: url("../../img/header_bike_tablet.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/header_bike_tablet@2x.jpg");
-    }
-  }
-
-  @media (max-width: 767px) {
-    margin-bottom: 360px;
-    background-image: url("../../img/header_bike_mobile.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/header_bike_mobile@2x.jpg");
-    }
+    background: none;
   }
 }
 
 .page-header__wrapper {
   max-width: 880px;
-  height: 825px;
   margin: 0 auto;
 
   @media (max-width: 1023px) {
-    height: min-content;
+    max-width: 100%;
   }
 }
 

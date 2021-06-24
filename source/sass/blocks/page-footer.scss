@@ -18,12 +18,14 @@
 .page-footer__wrapper h2 {
   margin: 0;
   margin-bottom: 30px;
+  padding-top: 150px;
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
   color: $simple-black;
 
   @media (max-width: 1023px) {
+    padding-top: 70px;
     margin-bottom: 20px;
     font-size: 24px;
   }
@@ -55,7 +57,7 @@
   width: 100%;
   height: 530px;
   background-color: $light-grey;
-  background-image: url("../../img/map_desktop.jpg");
+  background-image: url("../img/map_desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -65,26 +67,19 @@
     height: 545px;
     overflow: hidden;
     margin-bottom: 4px;
-    background-image: url("../../img/map_tablet.jpg");
+    background-image: url("../img/map_tablet.jpg");
   }
 
   @media (max-width: 767px) {
     height: 250px;
-    background-image: url("../../img/map_mobile.jpg");
+    background-image: url("../img/map_mobile.jpg");
   }
 }
 
 .page-footer__map iframe {
   display: block;
   width: 100%;
-
-  @media (max-width: 1023px) {
-    height: 545px;
-  }
-
-  @media (max-width: 767px) {
-    height: 250px;
-  }
+  height: 100%;
 }
 
 .page-footer__contacts {
@@ -101,13 +96,13 @@
 .page-footer__link {
   display: flex;
   align-items: center;
-  margin-right: 72px;
+  margin-right: 70px;
   padding: 15px 10px 18px;
   color: $black;
   opacity: 0.5;
 
   &:last-child {
-    margin-right: 18px;
+    margin-right: 15px;
   }
 
   &:hover {
