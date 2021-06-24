@@ -32,7 +32,6 @@ if (navLink) {
   });
 }
 
-
 'use strict';
 
 var userPhone = document.querySelector('#user-tel');
