@@ -122,9 +122,13 @@
 }
 
 .promo input {
-  height: 48px;
+  padding-top: 13px;
+  padding-bottom: 11px;
   padding-left: 30px;
   margin-bottom: 20px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
   border: 1px solid #c9ccd4;
   border-radius: 6px;
   box-sizing: border-box;
@@ -171,6 +175,7 @@
   background-color: $turquoise;
   border: none;
   border-radius: 6px;
+  cursor: pointer;
 
   &:hover {
     background-color: #0d9688ef;
