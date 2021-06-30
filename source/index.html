@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Магазин велосипедов MOON: подберем велосипед Вашей мечты"/>
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Магазин велосипедов "MOON"</title>
+  <link rel="preload" as="image" href="img/header_bike_mobile@2x.jpg" />
   <link rel="preload" href="fonts/opensans-light.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensans-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensans-semibold.woff2" as="font" crossorigin="anonymous">
@@ -73,9 +73,9 @@
         <ul class="types__list">
           <li class="types__item types__item--road">
             <picture>
-              <source type="image/webp" srcset="img/road_bike_desktop.webp, img/road_bike_desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/road_bike_tablet.webp, img/road_bike_tablet@2x.webp 2x">
               <!-- 1х: 342px/503px; 2x: 684px/1006px -->
-              <img src="img/road_bike_desktop.jpg" srcset="img/road_bike_desktop@2x.jpg 2x" width="342" height="503" alt="Изображение дорожного велосипеда">
+              <img src="img/road_bike_tablet.jpg" width="270" height="300" alt="Изображение дорожного велосипеда">
             </picture>
             <p>Дорожный велосипед</p>
           </li>
@@ -89,9 +89,9 @@
           </li>
           <li class="types__item types__item--child">
             <picture>
-              <source type="image/webp" srcset="img/child_bike_desktop.webp, img/child_bike_desktop@2x.webp 2x">
-              <!-- 1х: 342px/503px; 2x: 684px/1024px -->
-              <img src="img/child_bike_desktop.jpg" srcset="img/child_bike_desktop@2x.jpg 2x" width="342" height="512" alt="Изображение детского велосипеда">
+              <source type="image/webp" srcset="img/child_bike_tablet.webp, img/child_bike_tablet@2x.webp 2x">
+              <!-- 1х: 342px/512px; 2x: 684px/1024px -->
+              <img src="img/child_bike_tablet.jpg"  width="270" height="300" alt="Изображение детского велосипеда">
             </picture>
             <p>Детский велосипед</p>
           </li>
@@ -119,7 +119,8 @@
       <h2>Как нас найти?</h2>
       <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
       <div class="page-footer__map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651595!2d30.32089461607064!3d59.93879418187624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1624090077697!5m2!1sru!2sru" width="957" height="530" style="border:0;" allowfullscreen=""></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CCU4MUtzpD"
+        width="957" height="530" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
       <div class="page-footer__contacts">
         <a class="page-footer__link page-footer__link--email" href="mailto:gmail@puteshestviemechta.ru">

@@ -2,7 +2,7 @@
 
 var userPhone = document.querySelector('#user-tel');
 var userName = document.querySelector('#user-name');
-var buttonForm = document.querySelector('.user-form__button');
+var buttonForm = document.querySelector('.promo__button');
 
 var im = new Inputmask('+7 (999) 999-99-99');
 if (userPhone) {
@@ -26,6 +26,13 @@ if (buttonForm) {
       if (userPhone.value.length === 0) {
         evt.preventDefault();
         userPhone.setCustomValidity('Введите номер телефона');
+      } else if (userPhone.value.length > 0) {
+        var phoneNumber = userPhone.value.split('');
+        if (phoneNumber.includes('_')) {
+          userPhone.setCustomValidity('Введите номер телефона полностью');
+        } else {
+          userPhone.setCustomValidity('');
+        }
       } else {
         userPhone.setCustomValidity('');
       }
@@ -34,3 +41,7 @@ if (buttonForm) {
     }
   });
 }
+
+userPhone.addEventListener('input', function () {
+  userPhone.setCustomValidity('');
+});

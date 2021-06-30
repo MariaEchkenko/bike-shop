@@ -159,6 +159,10 @@
 
 .types__item img {
   display: block;
+  width: 342px;
+  height: 503px;
+  object-fit: cover;
+  border-radius: 10px;
 
   @media (min-width: 1024px) and (max-width: 1160px) {
     width: 310px;
@@ -167,9 +171,22 @@
   @media (max-width: 1023px) {
     width: 270px;
     height: 300px;
-    object-fit: cover;
-    object-position: 50% -60px;
-    border-radius: 10px;
+  }
+}
+
+.types__item--child img {
+  height: 512px;
+
+  @media (max-width: 1023px) {
+    height: 300px;
+  }
+}
+
+.types__item--mountain img {
+  height: 566px;
+
+  @media (max-width: 1023px) {
+    height: 300px;
   }
 }
 
